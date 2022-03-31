@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ruler of disappointment</title>
+  </head>
+  <body>
+    <h1>THE RULER TO RULE THEM ALL</h1>
+
+    <label for="n">N:</label>
+    <input type="number" name="n" value="13" id="input-n">
+
+    <br><br>
+    <label for="g">g:</label>
+    <input type="number" name="g" value="2" id="input-g">
+
+    <p style="display: none;" id="badvalswarn"><b>This values do not work! (g is not a primitive root of N) Try others!</b></p>
+    <p style="display: none;" id="invalidvalswarn"><b>This values are bad! N and g must be greater than 1 and g must also be lesser than N.</b></p>
+
+    <br>
+    <canvas id="canvas" width="800" height="100"></canvas>
+
+    <script type="text/javascript" src="bullshit.js"></script>
+  </body>
+</html>
