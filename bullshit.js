@@ -8,7 +8,7 @@ var selected = 0; // 0 = NONE, 1 = UP, -1 = DOWN
 var upOffset = 0;
 var downOffset = 0;
 
-let n = 13;
+let n = 101;
 let g = 2;
 
 let order = [];
