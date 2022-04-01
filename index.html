@@ -23,6 +23,11 @@
     <br>
     <canvas id="canvas" width="800" height="100"></canvas>
 
+    <p>The ruler can also divide if you move the top ruler so the divisor on top aligns with the 1 on the bottom and then look at the dividend on top and the number it's got under is the quotient (if the division is possible).</p>
+    <p>The numbers on the rulers are actually the powers of g modulo N. Because of modular arithmetic, multiplication and addition work well before and after applying the modulo N.</p>
+    <p>When g and N are coprime, the powers of g modulo N are periodic. Once you get a power that is congruent with one, all the powers above it are repeated.</p>
+    <p>However, those powers don't always cover all the numbers between 1 and N. When this does happen, g is refered to as a <a href="https://en.wikipedia.org/wiki/Primitive_root_modulo_n">primitive power modulo N</a> and the ruler can be used.</p>
+    
     <script type="text/javascript" src="bullshit.js"></script>
   </body>
 </html>

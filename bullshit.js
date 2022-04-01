@@ -75,6 +75,7 @@ function update() {
   for (let i = 1; i < n; i++) {
     graph.strokeStyle = "#000";
     line(i*50 + upOffset + downOffset,50,i*50 + upOffset + downOffset,30);
+    line((i+n-1)*50 + upOffset + downOffset,50,(i+n-1)*50 + upOffset + downOffset,30);
     line(i*50 + downOffset,50,i*50 + downOffset,70);
     line((i+n-1)*50 + downOffset,50,(i+n-1)*50 + downOffset,70);
     if (order[i-1] <= 10) {
@@ -85,6 +86,7 @@ function update() {
       graph.fillStyle = "#000";
     }
     graph.fillText(order[i-1], i*50 + upOffset + downOffset - 5, 20);
+    graph.fillText(order[i-1], (i+n-1)*50 + upOffset + downOffset - 5, 20);
     graph.fillText(order[i-1], i*50 + downOffset - 5, 85);
     graph.fillText(order[i-1], (i+n-1)*50 + downOffset - 5, 85);
     graph.strokeStyle = "#FFF";
